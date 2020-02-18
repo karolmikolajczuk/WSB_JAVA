@@ -9,7 +9,9 @@ public class Human {
     private Phone number;
     private Double salary;
 
-    public Human(String name, String surname, Double age, Integer id, Animal animal, Phone number, Double salary) {
+    private Car car;
+
+    public Human(String name, String surname, Double age, Integer id, Animal animal, Phone number, Double salary, Car car) {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -17,6 +19,7 @@ public class Human {
         this.animal = animal;
         this.number = number;
         this.salary = salary;
+        this.car = car;
     }
 
     public String getName() {
@@ -71,7 +74,15 @@ public class Human {
         return salary;
     }
 
-    public void setSalary() {
+    public void setSalary(Double salary) {
         this.salary = salary;
+    }
+
+    public Car getCar() {
+        return car;
+    }
+
+    public void setCar(Car car) {
+        this.car = car;
     }
 }
